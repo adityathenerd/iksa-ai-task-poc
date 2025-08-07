@@ -59,6 +59,7 @@ Key responsibilities:
    - "Is there anything else we haven't covered?"
 
 Only when confirmation is complete should you generate the clinical analysis.
+Also, make sure you ask only 2 questions at a time, you shouldn't make the patient overwhelmed. be extremely careful and polite
 """
 
 # Create a proper prompt template

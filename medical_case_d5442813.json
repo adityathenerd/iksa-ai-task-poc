@@ -1,0 +1,579 @@
+{
+  "patient_demographics": {
+    "age": null,
+    "gender": "Female",
+    "relevant_history": {
+      "hypertension": "pre-existing condition"
+    }
+  },
+  "chief_complaint": "Vaginal bleeding and intermittent moderate cramps",
+  "entities": [
+    {
+      "name": "Vaginal bleeding",
+      "type": "symptom",
+      "properties": {
+        "onset": "2 days ago",
+        "severity": "lower than usual periods",
+        "aggravating_factors": "Physical activity"
+      }
+    },
+    {
+      "name": "Intermittent moderate cramps",
+      "type": "symptom",
+      "properties": {
+        "onset": "2 days ago",
+        "severity": "moderate",
+        "aggravating_factors": "Physical activity"
+      }
+    },
+    {
+      "name": "Nausea",
+      "type": "symptom",
+      "properties": {
+        "severity": "worse with pickles and cheese"
+      }
+    },
+    {
+      "name": "Hypertension",
+      "type": "condition",
+      "icd_code": "I10",
+      "confidence": "high"
+    },
+    {
+      "name": "Threatened Abortion",
+      "type": "condition",
+      "icd_code": "O20.0",
+      "confidence": "moderate"
+    },
+    {
+      "name": "Ectopic Pregnancy",
+      "type": "condition",
+      "icd_code": "O00",
+      "confidence": "moderate"
+    },
+    {
+      "name": "Infection",
+      "type": "condition",
+      "confidence": "low"
+    },
+    {
+      "name": "Cervical Contraction/Incomplete Abortion",
+      "type": "condition",
+      "confidence": "low"
+    },
+    {
+      "name": "Placenta Previa",
+      "type": "condition",
+      "icd_code": "O44",
+      "confidence": "low"
+    },
+    {
+      "name": "Hyperemesis Gravidarum",
+      "type": "condition",
+      "icd_code": "O21.0",
+      "confidence": "low"
+    },
+    {
+      "name": "Hydatidiform Mole",
+      "type": "condition",
+      "icd_code": "O01",
+      "confidence": "low"
+    },
+    {
+      "name": "Pelvic Exam",
+      "type": "test",
+      "properties": {
+        "urgency": "immediate"
+      }
+    },
+    {
+      "name": "Vital Signs",
+      "type": "test",
+      "properties": {
+        "urgency": "immediate"
+      }
+    },
+    {
+      "name": "Urine Pregnancy Test",
+      "type": "test",
+      "properties": {
+        "urgency": "immediate"
+      }
+    },
+    {
+      "name": "Serial Beta-hCG Blood Tests",
+      "type": "test",
+      "properties": {
+        "urgency": "immediate"
+      }
+    },
+    {
+      "name": "Transvaginal Ultrasound",
+      "type": "test",
+      "properties": {
+        "urgency": "immediate"
+      }
+    },
+    {
+      "name": "Complete Blood Count",
+      "type": "test",
+      "properties": {
+        "urgency": "further investigation"
+      }
+    },
+    {
+      "name": "STI Testing",
+      "type": "test",
+      "properties": {
+        "urgency": "further investigation"
+      }
+    },
+    {
+      "name": "Gonorrhea/Chlamydia Testing",
+      "type": "test",
+      "properties": {
+        "urgency": "further investigation"
+      }
+    },
+    {
+      "name": "Hospitalization",
+      "type": "treatment",
+      "properties": {
+        "urgency": "dependent on severity"
+      }
+    },
+    {
+      "name": "Beta-blockers",
+      "type": "medication",
+      "properties": {
+        "indication": "hypertension"
+      }
+    },
+    {
+      "name": "Pain management",
+      "type": "treatment",
+      "properties": {
+        "indication": "cramping"
+      }
+    },
+    {
+      "name": "Antiemetics",
+      "type": "medication",
+      "properties": {
+        "indication": "nausea and vomiting"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Threatened Abortion",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Intermittent moderate cramps",
+      "to_entity": "Threatened Abortion",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Ectopic Pregnancy",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Intermittent moderate cramps",
+      "to_entity": "Ectopic Pregnancy",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Infection",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Intermittent moderate cramps",
+      "to_entity": "Infection",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Cervical Contraction/Incomplete Abortion",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Intermittent moderate cramps",
+      "to_entity": "Cervical Contraction/Incomplete Abortion",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Placenta Previa",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Intermittent moderate cramps",
+      "to_entity": "Placenta Previa",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Nausea",
+      "to_entity": "Hyperemesis Gravidarum",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Hydatidiform Mole",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Intermittent moderate cramps",
+      "to_entity": "Hydatidiform Mole",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Pelvic Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Pelvic Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Pelvic Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Pelvic Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Pelvic Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Pelvic Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Pelvic Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Vital Signs",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Vital Signs",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Vital Signs",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Vital Signs",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Vital Signs",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Vital Signs",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Vital Signs",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Urine Pregnancy Test",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Urine Pregnancy Test",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Urine Pregnancy Test",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Urine Pregnancy Test",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Urine Pregnancy Test",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Urine Pregnancy Test",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Urine Pregnancy Test",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Serial Beta-hCG Blood Tests",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Serial Beta-hCG Blood Tests",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Serial Beta-hCG Blood Tests",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Serial Beta-hCG Blood Tests",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Serial Beta-hCG Blood Tests",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Serial Beta-hCG Blood Tests",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Serial Beta-hCG Blood Tests",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Transvaginal Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Transvaginal Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Transvaginal Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Transvaginal Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Transvaginal Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Transvaginal Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Transvaginal Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Complete Blood Count",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Complete Blood Count",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Complete Blood Count",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Complete Blood Count",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Complete Blood Count",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Complete Blood Count",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Complete Blood Count",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "STI Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "STI Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "STI Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "STI Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "STI Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "STI Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "STI Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Gonorrhea/Chlamydia Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Gonorrhea/Chlamydia Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Gonorrhea/Chlamydia Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Gonorrhea/Chlamydia Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Gonorrhea/Chlamydia Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Gonorrhea/Chlamydia Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Gonorrhea/Chlamydia Testing",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion",
+      "to_entity": "Hospitalization",
+      "relationship_type": "may_require"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Hospitalization",
+      "relationship_type": "may_require"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Hospitalization",
+      "relationship_type": "may_require"
+    },
+    {
+      "from_entity": "Cervical Contraction/Incomplete Abortion",
+      "to_entity": "Hospitalization",
+      "relationship_type": "may_require"
+    },
+    {
+      "from_entity": "Placenta Previa",
+      "to_entity": "Hospitalization",
+      "relationship_type": "may_require"
+    },
+    {
+      "from_entity": "Hyperemesis Gravidarum",
+      "to_entity": "Hospitalization",
+      "relationship_type": "may_require"
+    },
+    {
+      "from_entity": "Hydatidiform Mole",
+      "to_entity": "Hospitalization",
+      "relationship_type": "may_require"
+    },
+    {
+      "from_entity": "Hypertension",
+      "to_entity": "Beta-blockers",
+      "relationship_type": "treated_by"
+    },
+    {
+      "from_entity": "Intermittent moderate cramps",
+      "to_entity": "Pain management",
+      "relationship_type": "treated_by"
+    },
+    {
+      "from_entity": "Nausea",
+      "to_entity": "Antiemetics",
+      "relationship_type": "treated_by"
+    }
+  ],
+  "clinical_reasoning": "The patient's symptoms of vaginal bleeding and intermittent moderate cramps, along with her history of hypertension, suggest several potential diagnoses, including threatened abortion, ectopic pregnancy, and others. The recommended tests and treatments are aimed at confirming these diagnoses and managing the patient's symptoms.",
+  "recommendations": [
+    "Immediate pelvic exam, vital signs monitoring, urine pregnancy test, serial Beta-hCG blood tests, and transvaginal ultrasound.",
+    "Further investigations including complete blood count, STI testing, and Gonorrhea/Chlamydia testing.",
+    "Potential hospitalization depending on the severity of the bleeding and the patient's vital signs.",
+    "Medications including beta-blockers for hypertension, pain management for cramping, and antiemetics for nausea and vomiting.",
+    "Frequent follow-up appointments with the obstetrician/gynecologist to monitor the patient's condition and guide further management."
+  ],
+  "metadata": {
+    "created_at": "2025-08-07T16:34:25.236237",
+    "case_id": "d5442813-ab4e-4583-8b08-e3f41f2fce59",
+    "entity_count": 23,
+    "relationship_count": 79,
+    "enhanced": false
+  }
+}
