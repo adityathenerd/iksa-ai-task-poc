@@ -1,0 +1,262 @@
+{
+  "patient_demographics": {
+    "age": null,
+    "gender": "Female",
+    "relevant_history": {
+      "pregnancy_status": "First Trimester",
+      "past_pregnancy_history": "No complications",
+      "medications": "Bonsartan H (Blood Pressure Medication)"
+    }
+  },
+  "chief_complaint": "Vaginal bleeding and cramps",
+  "entities": [
+    {
+      "name": "Vaginal bleeding",
+      "type": "symptom",
+      "properties": {
+        "severity": "Moderate",
+        "duration": "A couple of days",
+        "location": "Vaginal",
+        "characteristics": "Slightly brownish, does not worsen or improve"
+      }
+    },
+    {
+      "name": "Cramps",
+      "type": "symptom",
+      "properties": {
+        "severity": "Moderate",
+        "duration": "Intermittent",
+        "location": "Abdominal"
+      }
+    },
+    {
+      "name": "Nausea",
+      "type": "symptom"
+    },
+    {
+      "name": "Early Pregnancy Loss/Miscarriage",
+      "type": "condition",
+      "confidence": "Moderate"
+    },
+    {
+      "name": "Ectopic Pregnancy",
+      "type": "condition",
+      "confidence": "Low"
+    },
+    {
+      "name": "Threatened Abortion/Imminent Miscarriage",
+      "type": "condition",
+      "confidence": "Moderate"
+    },
+    {
+      "name": "Placental Abruption",
+      "type": "condition",
+      "confidence": "Low"
+    },
+    {
+      "name": "Infection",
+      "type": "condition",
+      "confidence": "Low"
+    },
+    {
+      "name": "Hormonal Imbalance",
+      "type": "condition",
+      "confidence": "Low"
+    },
+    {
+      "name": "Medication Side Effect",
+      "type": "condition",
+      "confidence": "Low"
+    },
+    {
+      "name": "Ultrasound",
+      "type": "test",
+      "properties": {
+        "urgency": "High",
+        "type": "Transvaginal"
+      }
+    },
+    {
+      "name": "Speculum Exam",
+      "type": "test",
+      "properties": {
+        "urgency": "High"
+      }
+    },
+    {
+      "name": "Complete Blood Count (CBC)",
+      "type": "test",
+      "properties": {
+        "urgency": "High"
+      }
+    },
+    {
+      "name": "Serum Beta-hCG (Human Chorionic Gonadotropin)",
+      "type": "test",
+      "properties": {
+        "urgency": "High"
+      }
+    },
+    {
+      "name": "Expectant Management",
+      "type": "treatment"
+    },
+    {
+      "name": "Medical Management",
+      "type": "treatment"
+    },
+    {
+      "name": "Surgical Intervention",
+      "type": "treatment"
+    },
+    {
+      "name": "Bonsartan H",
+      "type": "medication",
+      "properties": {
+        "dosage": null,
+        "frequency": null,
+        "route": null
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Early Pregnancy Loss/Miscarriage",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Cramps",
+      "to_entity": "Early Pregnancy Loss/Miscarriage",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Ectopic Pregnancy",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Cramps",
+      "to_entity": "Ectopic Pregnancy",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Threatened Abortion/Imminent Miscarriage",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Cramps",
+      "to_entity": "Threatened Abortion/Imminent Miscarriage",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Placental Abruption",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Cramps",
+      "to_entity": "Placental Abruption",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Infection",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Cramps",
+      "to_entity": "Infection",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Hormonal Imbalance",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Cramps",
+      "to_entity": "Hormonal Imbalance",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Vaginal bleeding",
+      "to_entity": "Medication Side Effect",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Cramps",
+      "to_entity": "Medication Side Effect",
+      "relationship_type": "suggests"
+    },
+    {
+      "from_entity": "Early Pregnancy Loss/Miscarriage",
+      "to_entity": "Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Threatened Abortion/Imminent Miscarriage",
+      "to_entity": "Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Placental Abruption",
+      "to_entity": "Ultrasound",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Infection",
+      "to_entity": "Speculum Exam",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Early Pregnancy Loss/Miscarriage",
+      "to_entity": "Complete Blood Count (CBC)",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Serum Beta-hCG (Human Chorionic Gonadotropin)",
+      "relationship_type": "indicates_need_for"
+    },
+    {
+      "from_entity": "Early Pregnancy Loss/Miscarriage",
+      "to_entity": "Expectant Management",
+      "relationship_type": "treated_by"
+    },
+    {
+      "from_entity": "Ectopic Pregnancy",
+      "to_entity": "Medical Management",
+      "relationship_type": "treated_by"
+    },
+    {
+      "from_entity": "Placental Abruption",
+      "to_entity": "Surgical Intervention",
+      "relationship_type": "treated_by"
+    }
+  ],
+  "clinical_reasoning": "The patient's symptoms of vaginal bleeding and cramps, along with her being in the first trimester of pregnancy, suggest possible complications such as early pregnancy loss, ectopic pregnancy, or threatened abortion. Other conditions such as placental abruption, infection, hormonal imbalance, or medication side effects are also considered but are less likely. Further evaluation through ultrasound, speculum exam, and laboratory tests is recommended to reach a definitive diagnosis.",
+  "recommendations": [
+    "Perform a transvaginal ultrasound to confirm the location and viability of the pregnancy.",
+    "Evaluate the amount and pattern of bleeding.",
+    "Perform a speculum exam to visualize the cervix and assess for any visible lesions or discharge.",
+    "Check the Complete Blood Count (CBC) to assess for anemia or other abnormalities.",
+    "Measure the serum Beta-hCG to help determine the gestational age and rule out certain conditions.",
+    "Depending on the patient's condition, consider expectant management, medical management, or surgical intervention.",
+    "Provide patient education and counseling, addressing the patient's concerns and anxieties, and providing emotional support.",
+    "Schedule follow-up appointments to monitor the patient's condition."
+  ],
+  "metadata": {
+    "created_at": "2025-08-07T14:58:34.040702",
+    "case_id": "cd3d97d2-cfd9-4fac-b340-6a984b356999",
+    "entity_count": 18,
+    "relationship_count": 24,
+    "enhanced": false
+  }
+}
